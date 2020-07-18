@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import './effects.css';
 import { Message } from './Message.jsx';
 
 export const SimpleForm = () => {

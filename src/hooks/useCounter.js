@@ -1,24 +1,24 @@
 import { useState } from "react";
 
 export const useCounter = (initiaState = 10) => {
-    const [state, setstate] = useState(initiaState);
+    const [counter, setCounter] = useState(initiaState);
 
 
-    const increment = (factor = 2) => {
-        setstate(state + factor);
+    const increment = () => {
+        setCounter(counter + 1);
     }
 
-    const decrement = (factor = 2) => {
-        setstate(state - factor);
+    const decrement = () => {
+        setCounter(counter - 1);
     }
 
     const reset = () => {
-        setstate(initiaState);
+        setCounter(initiaState);
     }
 
 
     return {
-        state,
+        counter,
         increment,
         decrement,
         reset
