@@ -10,10 +10,13 @@ import ReactDOM from 'react-dom';
 /* import { RealExampleRef } from './components/04-useRef/RealExampleRef'; */
 /* import { Memorize } from './components/05-Memos/Memorize'; */
 /* import { MemoHook } from './components/05-Memos/MemoHook'; */
-import { CallbackHook } from './components/05-Memos/CallbackHook';
+/* import { CallbackHook } from './components/05-Memos/CallbackHook'; */
+/* const { ToDoApp } = require("./components/06-useReducerIntro/ToDoApp"); */
+import { MainApp } from './components/07-useContext/MainApp';
 
 
-ReactDOM.render(
+
+ ReactDOM.render( 
 /*   <HooksApp/>,  */
 /*   <CounterApp/>, */
 /*   <CounterWithCustomHook/>, */
@@ -23,7 +26,10 @@ ReactDOM.render(
 /*   <RealExampleRef/>, */
  /*  <Memorize/>, */
 /*   <MemoHook/>, */
-  <CallbackHook/>,
-  document.getElementById('root')
-);
+/*   <CallbackHook/>, */
+/*   <ToDoApp/>, */
+    <MainApp/>,
+   document.getElementById('root')
+); 
 
+/* import './components/06-useReducerIntro/IntroReducer'; */

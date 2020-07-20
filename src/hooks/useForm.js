@@ -5,23 +5,27 @@ export const useForm = (initialState = {}) => {
 
     const [values, setValues] = useState(initialState);
 
-    const { email } = values;
+   /*  const { email, name, descripcion } = values; */
 
     const handleInputChange = ({target}) => { //hacemos destructurin del evento que viene como e
-
         setValues({
             ...values,
             [target.name]  : target.value
         })
     }
 
+    const reset = () => {
+        setValues( initialState )
+    }
 
+/* 
+    console.log(values)
     useEffect(() => {
-        console.log('el email cambio')
-    }, [email])
+        console.log('cambio email, name o descripcion')
+    }, [email, name, descripcion])
+ */
 
-
-    return [values, handleInputChange]
+    return [values, handleInputChange, reset]
 
 
 }
